@@ -1,0 +1,113 @@
+/* Extra small devices (phones, less than 768px) 
+=========================================================*/
+@media (max-width: 766px) {
+.navbar-nav > li > .dropdown-menu {
+	background: #ddd none repeat scroll 0 0;
+	margin-left: 65px;
+	margin-top: -40px;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border:none;
+}
+.dropdown-menu {
+	box-shadow: none;
+}
+.section-padding{
+	padding: 0;
+}
+#map-canvas {
+	margin-bottom:30px;
+}
+}
+
+/* Small devices (tablets, 768px and up) 
+=========================================================*/
+@media (min-width: 768px) and (max-width: 991px) {
+.nav > li > a {
+		padding: 10px 13px;
+		}
+.navbar-header {
+	margin-bottom: 10px;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border:none;
+}
+.navbar-brand {
+  margin-bottom: 20px;
+	position: relative;
+}
+.section-padding{
+	padding: 0;
+}
+#intro, .section-padding{
+	padding:30px 0
+}
+.banner-inner {
+  margin: 280px 0 115px;
+}
+.product-img {
+	float: none;
+}
+.product-img img {
+	height: auto;
+	width: 100%;
+}
+.product-detail {
+	margin-left: 0;
+	padding: 20px 0 0;
+}
+.opendate{
+	border-bottom: 0px solid #ddd;
+	border-right: 0 solid #9d9d9d;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+}
+.lastdate{
+	border-right:0px solid;
+	border-bottom: 0px solid #ddd;
+}
+.testimonial{
+	margin-bottom:20px;
+}
+#map-canvas {
+	margin-bottom:30px;
+}
+}
+
+/* Wide Mobile Layout: 480px
+=========================================================*/
+@media only screen and (max-width: 480px) {
+.section-padding{
+	padding: 0;
+}
+#intro, .section-padding{
+	padding:30px 0
+}
+.banner-inner {
+	margin: 110px 0 50px;
+}
+.product-img {
+	float: none;
+}
+.product-img img {
+	height: auto;
+	width: 100%;
+}
+.product-detail {
+	margin-left: 0;
+	padding: 20px 0 0;
+}
+.opendate{
+	border-bottom: 1px solid #ddd;
+	border-right: 0 solid #9d9d9d;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+}
+.lastdate{
+	border-right:0px solid;
+	border-bottom: 0px solid #ddd;
+}
+.testimonial{
+	margin-bottom:20px;
+}
+}

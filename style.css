@@ -1,0 +1,480 @@
+/*
+Template Name: Coffeeco
+Author: DotThemes
+URL: http://www.dotthemes.com
+Version: 1.0
+Desctiption: Responsive coffee shop template.
+*/
+/*
+====================================
+[ CSS TABLE CONTENT ]
+------------------------------------
+	1.0 - GLOBAL SYTLES	
+	2.0 - NAVBAR
+	3.0 - BANNER SECTION
+	4.0 - INTRO SECTION
+	5.0 - PRODUCTS SECTION
+	6.0 - OPENING HOUR SECTION
+	7.0 - WHY CHOOSE SECTION
+	8.0 - TESTIMONIALS SECTION		
+	9.0 - CONTACT SECTION
+	10.0 - SOCIAL SECTION
+	11.0 - FOOTER SECTION 
+-------------------------------------
+[ END CSS TABLE CONTENT ]
+=====================================
+*/
+/* ==========================================================================
+   1.0 - GLOBAL SYTLES
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+::-moz-selection {
+    background: #F8FBA2;
+    color: #444;
+    text-shadow: none;
+}
+::selection {
+    background: #FFF98C;
+    color: #a4003a;
+    text-shadow: none;
+}
+img {
+    vertical-align: middle;
+}
+textarea {
+    resize: vertical;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+	color: #666;
+	font-family: "Open Sans",sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+}
+a img {
+    background: white;
+}
+.odd a img {
+    background: #f5f5f5;
+}
+/* Titles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 200;
+    color: #555;
+    font-family: "Lobster", sans-serif;
+}
+h2 {
+    color: #666;
+    font-weight: 500;
+}
+
+/* Paragraph & Typographic */
+p {
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+p.large {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.centered {
+    text-align: center;
+}
+strong {
+    font-weight: 700;
+}
+em {
+    font-weight: 300;
+}
+pre {
+    background: #ebebeb;
+    border: none;
+    font-family: "Monaco";
+    font-size: 16px;
+    color: #666;
+    padding: 20px;
+    line-height: 28px;
+}
+small {
+    font-size: 12px;
+}
+blockquote,
+blockquote p {
+    line-height: 28px;
+    color: #999;
+    font-weight: 300;
+    font-style: italic;
+}
+blockquote {
+    position: relative;
+    margin: 0 0 40px -30px;
+    padding-left: 30px;
+    border-left: 5px solid #3498db;
+}
+blockquote cite {
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    font-size: 12px;
+    font-style: italic;
+    color: #333;
+    font-weight: 300;
+}
+blockquote cite:before {
+    content: "-- "
+}
+/* Images */
+
+.overflow-image {
+    margin-top: -65px;
+}
+/* Links */
+
+a {
+    color: #66CBFF;
+    word-wrap: break-word;
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+a:hover,
+a:focus {
+    color: #EE7751;
+    text-decoration: none;
+    outline: 0;
+}
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+.text-color {
+    color: #66CCFF;
+}
+.floatleft {
+    float: left
+}
+.floatright {
+    float: right
+}
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* Common CSS */
+.section-header {
+    margin-bottom: 50px;
+}
+.section-header h2{
+background: #432A1C none repeat scroll 0 0;
+color: #fff;
+font-size: 30px;
+margin: 0 auto;
+padding: 25px;
+text-align: center;
+width: 320px;
+}
+.section-padding{
+	padding: 80px 0;
+}
+.no-padding {
+    padding: 0;
+}
+.no-margin {
+    margin: 0;
+}
+.relative {
+    position: relative;
+}
+
+/* ==========================================================================
+   2.0 - NAVBAR
+   ========================================================================== */
+.navcoffee{
+	border: medium none;
+	border-radius: 0;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}	
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+	font-family: "Lobster",sans-serif;
+	font-size: 20px;
+	line-height: 30px;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #ECC731;
+    background-color: #fff;
+}
+.navbar-default {
+    background-color: #3a2313;
+    padding: 12px 0;
+    box-shadow: 0 0 3px #ccc;
+    font-weight: 500;
+}
+.navbar-toggle {
+    border-color: transparent;
+    border: 0px solid transparent;
+	z-index:3;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #ECC731;
+}
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+}
+.navbar-brand h1{
+	color: #fff;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+.navbar-brand h1:hover{
+	color:#F8FBA2
+}
+
+/* ==========================================================================
+   3.0 - BANNER SECTION
+   ========================================================================== */
+section.banner{
+	background: url("images/bannerbg.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center; 
+	min-height: 625px;
+}
+
+.coffee-overlay {
+	background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+}
+.banner-inner{
+	color: #fff;
+	margin: 200px 0 153px;
+	padding: 30px;
+}
+.banner h2{
+	color: #fff;
+	font-size: 50px;
+	line-height: 60px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+
+/* ==========================================================================
+   4.0 - INTRO SECTION
+   ========================================================================== */
+.intro h2{
+	font-size:30px;
+	margin-top: 0;
+}
+.intro span{
+	font-size:25px;
+}
+.intro p{
+	color: #444;
+	font-weight: 400;
+}
+.intro img{
+	padding-top: 10px;
+}
+
+/* ==========================================================================
+   5.0 - PRODUCTS SECTION
+   ========================================================================== */ 
+section.products {
+	background: rgba(0, 0, 0, 0) url("images/coffeebg.jpg");
+	background-repeat:no-repeat;
+	-o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size:cover;
+	background-position: center;
+	background-attachment: scroll;		
+	min-height: 625px;
+}
+.product-item{
+	background: #fff none repeat scroll 0 0;
+	padding: 20px;margin-bottom: 30px;
+}
+.product-img{
+	float: left;
+}
+.product-detail{
+	margin-left: 155px;
+	padding: 20px;
+}
+.product-detail span{
+	background: #33211d none repeat scroll 0 0;
+	color: #fff;
+	font-weight: 400;
+	padding: 5px 10px;
+}
+.product-detail h4{
+	color:#444
+}
+.product-detail p{
+	color:#444
+}
+
+/* ==========================================================================
+   6.0 - OPENING HOUR SECTION
+   ========================================================================== */
+.opening{
+	padding-bottom: 100px;
+}
+.opening p{
+	font-size: 20px;
+	font-weight: 600;
+}
+.opendate{
+	border-right: 1px solid #9d9d9d;
+}
+.lastdate{
+	border-right:0px solid
+}
+
+/* ==========================================================================
+   7.0 - WHY CHOOSE SECTION
+   ========================================================================== */ 
+section.whychoose {
+	background: rgba(0, 0, 0, 0) url("images/why.jpg");
+	background-repeat:no-repeat;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size:cover;
+	background-position: center;
+	background-attachment: scroll;	
+	min-height: 625px;
+}
+.whychoose p{
+	color:#fff;
+}
+
+/* ==========================================================================
+   8.0 - TESTIMONIALS SECTION
+   ========================================================================== */
+.testimonials{
+	padding-bottom: 100px;
+}
+.testimonials img{
+	border: 1px solid #432a1c;
+	float: left;
+	margin-top: 8px;
+	padding: 1px;
+	width: 100px;
+}
+.testimonial{
+	border: 1px solid #9d9d9d;
+	padding: 20px;
+}
+.testimonial:hover{
+	background:#432A1C;
+	color:#fff;
+	border:1px solid #261714;
+}
+.testimonials {
+	text-align: right;
+}
+.testimonial span{
+	text-align: right;
+	font-weight: 600;
+}
+
+/* ==========================================================================
+   9.0 - CONTACT SECTION
+   ========================================================================== */
+.contact{
+	background:#EBEBEB;
+	text-align: center;
+}
+.contact p{
+	padding-top: 20px;
+}
+.contact a{
+	color:#382414;
+}
+
+/* google map */
+#google-map {
+	padding: 0;
+}
+#map-canvas {
+	height: 397px;
+	width: 100%;
+}
+
+/* ==========================================================================
+   10.0 - SOCIAL SECTION
+   ========================================================================== */
+.social{
+	background: #ebebeb none repeat scroll 0 0;
+}
+.social ul.social-network {
+	display: table;
+	margin: 0 auto;
+	padding: 10px;
+}
+ul.social-network {
+    list-style: none;
+    margin: 0;
+}
+ul.social-network li {
+	float: left;
+	list-style: outside none none;
+}
+.social ul.social-network li i {
+	color: #bbbbbb;
+	font-size: 25px;
+	line-height: 50px;
+	text-align: center;
+	width: 50px;
+}
+.social ul.social-network li i:hover {
+	color:#534841;
+}
+
+/* ==========================================================================
+   11.0 - FOOTER SECTION 
+   ========================================================================== */
+.footer{
+	background: #261714;
+	padding-top: 25px;
+	color: #fff;
+}
